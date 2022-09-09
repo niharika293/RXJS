@@ -51,7 +51,7 @@ export class PromiseComponent implements OnInit {
   }
 
   isHPAvailable(){
-    return false;
+    return true;
   }
 
 }
