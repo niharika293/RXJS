@@ -5,13 +5,15 @@ import { AllComponent } from './includes/observable/all/all.component';
 import { FromEventComponent } from './includes/observable/from-event/from-event.component';
 import { ObservableComponent } from './includes/observable/observable.component';
 import { PromiseComponent } from './includes/promise/promise.component';
+import { ToArrayComponent } from './includes/to-array/to-array.component';
 
 const routes: Routes = [
   {path : 'promise', component : PromiseComponent},
   {path : 'observable', component : ObservableComponent, children : [
     {path : '', component : AllComponent}, //making empty path , this means if route has observable, by default list component willl be redirected.
     {path : 'fromEvent', component : FromEventComponent},
-    {path : 'interval', component : IntervalComponent}
+    {path : 'interval', component : IntervalComponent},
+    {path : 'toArray', component : ToArrayComponent}
   ]},
   {path : '**', redirectTo : 'promise'} //This will redirect any unmatched /non-existing route to promise component.
 ];
