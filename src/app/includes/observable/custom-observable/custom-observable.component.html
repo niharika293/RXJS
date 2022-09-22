@@ -1,0 +1,31 @@
+<div class="my-3 mx-4">
+    <h2>Custom Observable</h2>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <strong>Ex - 01 (Manual)</strong>
+            <hr>
+            <ul class="tech-list" [ngClass]="(status === 'completed' ? 'success' : (status === 'error') ? 'error' : '')">
+                <li *ngFor="let tech of techlist"> {{tech}}</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <strong>Ex - 02 (Custom Interval Observable)</strong>
+            <hr>
+            <ul class="tech-list">
+                <li *ngFor="let tech of techList2"> {{tech}}</li>
+            </ul>
+        </div>
+        <div class="col-md-12">
+            <br>
+            <strong>Ex - 03 (Random Names)</strong>
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Random Names :</strong>
+                'Amitabh Bachhan', 'Tarak Mehta'
+            </p>
+            <hr>
+            <p> Current Name : <strong class="text-success">{{currentName}}</strong></p>
+            <span class="badge badge-success">Success</span>
+        </div>
+    </div>
+</div>
