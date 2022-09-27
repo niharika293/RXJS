@@ -12,6 +12,7 @@ import { IntervalComponent } from './includes/interval/interval.component';
 import { ToArrayComponent } from './includes/to-array/to-array.component';
 import { CustomObservableComponent } from './includes/observable/custom-observable/custom-observable.component';
 import { MapComponent } from './includes/observable/all/map/map.component';
+import { PluckComponent } from './includes/observable/all/pluck/pluck.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MapComponent } from './includes/observable/all/map/map.component';
     IntervalComponent,
     ToArrayComponent,
     CustomObservableComponent,
-    MapComponent
+    MapComponent,
+    PluckComponent
   ],
   imports: [
     BrowserModule,
