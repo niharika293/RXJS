@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { IntervalComponent } from './includes/interval/interval.component';
 import { AllComponent } from './includes/observable/all/all.component';
+import { FilterComponent } from './includes/observable/all/filter/filter.component';
 import { MapComponent } from './includes/observable/all/map/map.component';
 import { PluckComponent } from './includes/observable/all/pluck/pluck.component';
 import { CustomObservableComponent } from './includes/observable/custom-observable/custom-observable.component';
@@ -19,7 +20,8 @@ const routes: Routes = [
     {path : 'toArray', component : ToArrayComponent},
     {path : 'customObs', component : CustomObservableComponent},
     {path : 'map', component : MapComponent},
-    {path : 'pluck', component : PluckComponent}
+    {path : 'pluck', component : PluckComponent},
+    {path : 'filter', component : FilterComponent}
   ]},
   {path : '**', redirectTo : 'promise'} //This will redirect any unmatched /non-existing route to promise component.
 ];
