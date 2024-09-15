@@ -1,0 +1,39 @@
+<div class="my-3">
+    <h2>MergeMap</h2>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <strong> Ex - 01 : Map</strong>
+            <hr>
+            <p class="bg-light px-2 px-3 border rounded">
+                <strong>Videos : </strong> ['Tech', 'Comeedy', 'News']
+            </p>
+            <hr>
+            <ul>
+                <li *ngFor="let map of mapList">{{map}}</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <strong> Ex - 02 : Map + mergeAll</strong>
+            <hr>
+            <p class="bg-light px-2 px-3 border rounded">
+                <strong>Videos : </strong> ['Tech', 'Comeedy', 'News']
+            </p>
+            <hr>
+            <ul>
+                <li *ngFor="let map of mapPlusMergeAllList">{{map}}</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <strong> Ex - 03 : MergeMap</strong>
+            <hr>
+            <p class="bg-light px-2 px-3 border rounded">
+                <strong>Videos : </strong> ['Tech', 'Comeedy', 'News']
+            </p>
+            <hr>
+            <ul>
+                <li *ngFor="let map of mergeMapList">{{map}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

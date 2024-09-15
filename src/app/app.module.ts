@@ -14,6 +14,7 @@ import { CustomObservableComponent } from './includes/observable/custom-observab
 import { MapComponent } from './includes/observable/all/map/map.component';
 import { PluckComponent } from './includes/observable/all/pluck/pluck.component';
 import { FilterComponent } from './includes/observable/all/filter/filter.component';
+import { MergemapComponent } from './includes/observable/all/mergemap/mergemap.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FilterComponent } from './includes/observable/all/filter/filter.compone
     CustomObservableComponent,
     MapComponent,
     PluckComponent,
-    FilterComponent
+    FilterComponent,
+    MergemapComponent
   ],
   imports: [
     BrowserModule,
