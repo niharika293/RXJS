@@ -11,6 +11,7 @@ import { ObservableComponent } from './includes/observable/observable.component'
 import { PromiseComponent } from './includes/promise/promise.component';
 import { ToArrayComponent } from './includes/to-array/to-array.component';
 import { MergemapComponent } from './includes/observable/all/mergemap/mergemap.component';
+import { ConcatmapComponent } from './includes/observable/all/concatmap/concatmap.component';
 
 const routes: Routes = [
   {path : 'promise', component : PromiseComponent},
@@ -23,7 +24,8 @@ const routes: Routes = [
     {path : 'map', component : MapComponent},
     {path : 'pluck', component : PluckComponent},
     {path : 'filter', component : FilterComponent},
-    {path : 'merge-map', component : MergemapComponent}
+    {path : 'merge-map', component : MergemapComponent},
+    {path : 'concat-map', component : ConcatmapComponent}
   ]},
   {path : '**', redirectTo : 'promise'} //This will redirect any unmatched /non-existing route to promise component.
 ];

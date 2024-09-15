@@ -15,6 +15,7 @@ import { MapComponent } from './includes/observable/all/map/map.component';
 import { PluckComponent } from './includes/observable/all/pluck/pluck.component';
 import { FilterComponent } from './includes/observable/all/filter/filter.component';
 import { MergemapComponent } from './includes/observable/all/mergemap/mergemap.component';
+import { ConcatmapComponent } from './includes/observable/all/concatmap/concatmap.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MergemapComponent } from './includes/observable/all/mergemap/mergemap.c
     MapComponent,
     PluckComponent,
     FilterComponent,
-    MergemapComponent
+    MergemapComponent,
+    ConcatmapComponent
   ],
   imports: [
     BrowserModule,
