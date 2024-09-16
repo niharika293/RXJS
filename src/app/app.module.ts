@@ -16,6 +16,7 @@ import { PluckComponent } from './includes/observable/all/pluck/pluck.component'
 import { FilterComponent } from './includes/observable/all/filter/filter.component';
 import { MergemapComponent } from './includes/observable/all/mergemap/mergemap.component';
 import { ConcatmapComponent } from './includes/observable/all/concatmap/concatmap.component';
+import { SwitchmapComponent } from './includes/observable/all/switchmap/switchmap.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ConcatmapComponent } from './includes/observable/all/concatmap/concatma
     PluckComponent,
     FilterComponent,
     MergemapComponent,
-    ConcatmapComponent
+    ConcatmapComponent,
+    SwitchmapComponent
   ],
   imports: [
     BrowserModule,
